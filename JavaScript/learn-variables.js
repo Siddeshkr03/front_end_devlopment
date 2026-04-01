@@ -17,4 +17,4 @@ console.log('state',state);
     console.log('Rohith score', score);
     
 }
-console.log('Rohith score--', score);git in
+console.log('Rohith score--', score);
