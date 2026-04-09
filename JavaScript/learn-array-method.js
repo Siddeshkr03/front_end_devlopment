@@ -25,7 +25,7 @@ console.log(arr);
 arr.reverse()
 console.log(arr);
 
-// Program to fing anagram
+// Program to find anagram
 
 function is_anagram(str1,str2){
     let value = str1.split("").sort().join("");
