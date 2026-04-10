@@ -58,3 +58,35 @@ for (let key in mobile) {
     console.log(mobile[key]);
   }
 }
+
+// Object assign
+let target = {
+    name : "Virat",
+    age : 20,
+};
+
+let source = {
+    name : "Rohit",
+    city : "Bengaluru",
+};
+
+console.log(Object.assign(target,source));
+
+let str1= "Banglore";
+let str2 = "Udupi";
+console.log(str1.concat(" ",str2));
+console.log(str1+str2);
+
+// template literals
+
+console.log("I am in " + str1 + " Moving to " + str2);
+
+console.log(`template literal: I am in ${str1} moving to ${str2}`);
+
+ str1 = [1]
+console.log(arr.indexOf(1));
+
+
+
+
+
