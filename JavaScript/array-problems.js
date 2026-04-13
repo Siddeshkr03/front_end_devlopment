@@ -1,7 +1,7 @@
 // Program to find anagram
 
 function is_anagram(str1,str2){
-    let value = str1.split("").sort().join("");
+    let value1 = str1.split("").sort().join("");
     let value2 = str2.split("").sort().join("");
 
     if(value1==value2){
@@ -30,8 +30,8 @@ else{
 // without reverse method
 
 // function isPalindrome(str) {
-//   let l = 0;
-//   let r = str.length - 1;
+  let l = 0;
+  let r = str.length - 1;
 
   while (l < r) {
     if (str.charAt(l) !== str.charAt(r)) {
@@ -130,4 +130,18 @@ for(let i= 0; i<c.length;i++){
 }
 console.log(dict);
 
+// other appraoch
+let c1 = "Bengaluru";
+let dict1 = {}
+
+for(i=0;i<c1.length;i++){
+  if(dict1[c1[i]]){
+    dict1[c1[i]]+=1;
+  }
+  else{
+    dict1[c1[i]]=1;
+  }
+}
+
+console.log(dict1);
 
