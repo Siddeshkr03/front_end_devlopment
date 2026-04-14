@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Events</title>
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+    <h2 id="blur"></h2>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" onblur="handleBlur()">
+    <button
+      onclick="handleclick()" onmouseover="handlemouseover()" onmouseout="handlemouseout()">
+      submit
+    </button>
+    <script>
+
+        //onclick event --> when button is clicked
+      function handleclick() {
+        document.getElementById("heading").innerHTML = "Button is clicked";
+      }
+    
+      // onblur event --> when come out from input box 
+      function handleBlur() {
+        alert('Fill the box')
+        document.getElementById("blur").innerHTML = "onblur Event";
+      }
+
+      // onmouseover event --> when mouse overed on an element
+      function handlemouseover() {
+        document.getElementById("blur").innerHTML = "Mouse over on button";
+      }
+
+      // Mouse out event -> when mouse go out from the button
+      function handlemouseout(){
+        document.getElementById("blur").innerHTML = "Mouse out from button";
+      }
+
+      
+    </script>
+  </body>
+</html>
