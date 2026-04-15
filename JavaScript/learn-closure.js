@@ -31,3 +31,21 @@ const myBill = teashop();
 myBill(10); // Tea
 myBill(20); // Snacks
 myBill(15); // coffee
+
+
+// Example 3
+
+function bankAccount(){
+  let balance = 1000;
+
+  return function (amount){
+    balance += amount;
+    console.log("Balance: ₹" + balance);
+  };
+}
+
+const account = bankAccount();
+
+account(500);
+account(-200);
+account(300);

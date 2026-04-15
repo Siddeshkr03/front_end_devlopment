@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Speedometer</title>
+</head>
+<body>
+    <h1>🚙 Car Speedometer</h1>
+
+    <h2 id="speedDisplay">0 km/h</h2>
+
+    <button onclick="car.accelerate(10)">Accelerate + 10</button>
+    <button onclick="car.brake(10)">Brake - 10</button>
+
+    <script>
+        function carSpeedometer(){
+            let speed = 0;
+
+            function updateDisplay(){
+                document.getElementById("speedDisplay").innerHTML = speed ;
+            }
+
+            function accelerate(amount){
+                speed += amount;
+                updateDisplay();
+            }
+
+            function brake(amount){
+                speed -= amount;
+                if(speed<0) speed = 0;
+                updateDisplay();
+            }
+
+            return{
+                accelerate,
+                brake,
+            };
+        }
+
+        const car = carSpeedometer();
+    </script>
+</body>
+</html>
