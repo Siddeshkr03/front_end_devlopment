@@ -68,3 +68,25 @@ premium.betterView();
 premium.loungeAccess();
 premium.meetPlayers();
 
+// Method overriding
+
+// Parent class
+class IPLTicket{
+    constructor(name){
+        this.name = name;
+    }
+
+    watchMatch(){
+        console.log(this.name + " is watching match from north end");   
+    }
+}
+
+class VIPticket extends IPLTicket{
+    watchMatch(){
+        console.log(this.name + " is watching match from VIP stand 🔥");
+    }
+}
+
+const vip = new VIPticket("Rahul");
+vip.watchMatch();
+
