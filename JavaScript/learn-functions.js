@@ -40,7 +40,6 @@ let multiply = function(c,d){
 }
 multiply(5, 10);
 
-
 let multi = function(c,d){
     return c*d;
 }
