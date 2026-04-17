@@ -103,7 +103,6 @@ for(let i = 0;i<arrd1.length;i++){
 }
 console.log(arrnd1);
 
-
 //find the largest num in array
 let arr2 = [100, 200, 350, 120, 140];
 let max = arr[0];
@@ -145,3 +144,47 @@ for(i=0;i<c1.length;i++){
 
 console.log(dict1);
 
+// Bubble sort
+
+let arr = [4, 6, 2, 3, 1, 7];
+
+function bubble(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] > arr[j]) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+console.log(bubble(arr));
+
+// Bubble sort -> method - 2
+
+let arr1 = [4, 6, 2, 3, 1, 7];
+
+function bubble(arr1) {
+  for (let i = 0; i < arr1.length - 1; i++) {
+    let swapped = false;
+
+    for (let j = 0; j < arr1.length - 1 - i; j++) {
+      if (arr1[j] > arr1[j + 1]) {
+        let temp = arr1[j];
+        arr1[j] = arr1[j + 1];
+        arr1[j + 1] = temp;
+        swapped = true;
+      }
+    }
+
+    // Optimization: stop if already sorted
+    if (!swapped) break;
+  }
+
+  return arr1;
+}
+
+console.log(bubble(arr1));
