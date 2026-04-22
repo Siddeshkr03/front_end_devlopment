@@ -103,3 +103,6 @@ OrderFood().then((message) => {
     .catch((error) => {
         console.log("Error -> ", error); 
     });
+
+console.log(typeof(Promise));
+
