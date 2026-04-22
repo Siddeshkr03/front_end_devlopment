@@ -7,5 +7,10 @@ let mobile = [
 
 // filter method
 
-filteredData = mobile.filter((value) => value.brand != "Apple");
+let filteredData = mobile.filter((value) => value.brand != "Apple");
 console.log(filteredData);
+
+// map method
+
+let mapData = mobile.map((value) => console.log("value data", value));
+console.log(mapData);
