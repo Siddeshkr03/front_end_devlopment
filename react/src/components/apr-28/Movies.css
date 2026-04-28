@@ -1,0 +1,10 @@
+.cards{
+    display: flex;
+    position: absolute;
+}
+
+.logo{
+   position: 'absolute';
+    top: 50%;
+    left: 50%;
+}
