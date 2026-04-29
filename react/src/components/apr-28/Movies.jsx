@@ -1,31 +1,24 @@
+import React from "react";
 import "./Movies.css";
 
-const Movies = ({ MoviesData }) => {
-  return (
-    <div>
-      <div className="cards">
-        {MoviesData.map((movie, index) => (
-          <div key={index} style={{ position: "relative" }}>
-            <img src={movie.imageUrl} width={300} height={600} />
+function Movies(props) {
+  console.log("Props", props);
 
-            {index === 2 && (
-              <img
-                src="https://brandlogovector.com/wp-content/uploads/2022/02/Disney-Hotstar-Logo-Small.png"
-                alt="Disney+ Hotstar"
-                style={{
-                  position: "absolute",
-                  top: "190px",
-                  left: "100px",
-                  width: "150px",
-                  zIndex: 10,
-                }}
-              />
-            )}
-          </div>
-        ))}
-      </div>
+  let MoviesData = props.movies.map((value) => {
+    {
+      return (
+        <div>
+          <img className="marvel" src="{value.imageUrl}" />
+        </div>
+      );
+    }
+  });
+
+  return(
+    <div className="main">
+      <div className="banner">{MoviesData}</div>
     </div>
   );
-};
+}
 
 export default Movies;
