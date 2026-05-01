@@ -1,5 +1,6 @@
 import React from "react";
 import Movies from "./components/apr-28/Movies";
+import Mobile from "./components/may-01/Mobile";
 import "./App.css";
 
 const App = () => {
@@ -33,7 +34,8 @@ const App = () => {
 
   return (
     <div>
-      <Movies MoviesData={data} />
+      {/* <Movies movies={data} /> */}
+      <Mobile/>
     </div>
   );
 };
