@@ -32,10 +32,13 @@ const App = () => {
     },
   ];
 
+  let name = "David";
+  let city = "Bengaluru";
+
   return (
     <div>
       {/* <Movies movies={data} /> */}
-      <Mobile/>
+      <Mobile name={name} city={city}/>
     </div>
   );
 };
