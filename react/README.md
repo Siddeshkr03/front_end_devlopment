@@ -1,16 +1,33 @@
-# React + Vite
+# React Practice Projects 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Description
+This repository contains my learning journey with React.js.  
+I am building small projects and components to understand core concepts and improve my frontend development skills.
 
-Currently, two official plugins are available:
+##  What I'm Learning
+- Components and Props
+- useState and Hooks
+- Event Handling
+- Conditional Rendering
+- Forms in React
+- Component Styling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Projects Included
+- Counter App
+- Todo List
+- Basic UI Components
 
-## React Compiler
+##  Tech Stack
+- React.js
+- JavaScript (ES6+)
+- HTML
+- CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Goal
+To build strong frontend skills and progress towards full-stack development using React and Django.
 
-## Expanding the ESLint configuration
+##  Future Plans
+- Build more advanced React projects  
+- Learn backend using Django  
+- Integrate frontend with backend APIs  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

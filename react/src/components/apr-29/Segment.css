@@ -1,0 +1,19 @@
+.banner {
+  display: grid;
+  grid-template-columns: 15% 15% 30% 15% 15%;
+  width: 100vw;
+  height: 800px;
+  gap: 0;
+}
+
+.movieElement {
+  width: 100%;
+  height: 100%;
+}
+
+.movieElement img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps images from looking squashed */
+  display: block;
+}

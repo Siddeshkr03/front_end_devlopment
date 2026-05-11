@@ -1,22 +1,25 @@
-import React from "react";
-import "./Movies.css";
+import React from 'react';
 
 function Movies(props) {
-  console.log("Props", props);
+    console.log("props from the app file", props);
 
-  let MoviesData = props.movies.map((value, index) => {
+    let moviePage = props.moviesData.map((movie) => {
+        return (
+            <div>
+                <img src={movie.imageUrl} alt={movie.title} />
+                <h2>{movie.title}</h2>
+                <p>{movie.about}</p>
+            </div>
+        );
+    });
+    
     return (
-      <div key={index}>
-        <img className="marvel" src={value.imageUrl} alt="movie" />
-      </div>
+        <div>
+            {moviePage}
+        </div>
     );
-  });
 
-  return (
-    <div className="main">
-      <div className="banner">{MoviesData}</div>
-    </div>
-  );
 }
+
 
 export default Movies;
