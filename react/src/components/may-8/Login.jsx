@@ -8,32 +8,45 @@ function Login() {
 
   const navigate = useNavigate();
 
-  //handle user name
+  // Handle username
   const handleUser = (event) => {
-    console.log(event.target.value);
     setUserName(event.target.value);
   };
 
-  // handle Password
+  // Handle password
   const handlePassword = (event) => {
-    console.log(event.target.value);
     setPassword(event.target.value);
   };
 
-  const handleSubmit = () => {
+  // Handle form submit
+  const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Submitting the value");
-    navigate("/home");
+
+    if (userName === "admin" && password === "admin") {
+      alert("Login Successful");
+      navigate("/home");
+    } else {
+      alert("Incorrect Username or Password");
+    }
   };
 
   return (
     <div className="main">
       <form onSubmit={handleSubmit}>
         <h4 className="input-label">User Name</h4>
-        <input  className="input-text" type="text" id="un" value={userName} onChange={handleUser} />
+
+        <input
+          className="input-text"
+          type="text"
+          id="un"
+          value={userName}
+          onChange={handleUser}
+        />
 
         <h4 className="input-label">Password</h4>
-        <input className="input-text"
+
+        <input
+          className="input-text"
           type="password"
           id="pw"
           value={password}

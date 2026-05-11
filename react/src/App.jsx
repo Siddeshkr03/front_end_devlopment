@@ -66,6 +66,9 @@ import Option from "./components/apr-29/Option";
 import Segment from "./components/apr-29/Segment";
 import Mobile from "./components/may-1/Mobile";
 import MobileView from "./components/may-1/MobileView";
+import Basic from "./components/may-11/useEffect/Basic";
+import Dependency from "./components/may-11/useEffect/Dependency";
+import OnlyOnce from "./components/may-11/useEffect/OnlyOnce";
 import Concert from "./components/may-4/Concert";
 import Event from "./components/may-4/Event";
 import CounterOne from "./components/may-5/CounterOne";
@@ -160,6 +163,9 @@ function App() {
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
       <Routing />
+      {/* <Basic/>
+      <OnlyOnce/>
+      <Dependency/> */}
     </div>
   );
 }

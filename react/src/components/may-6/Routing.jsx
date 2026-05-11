@@ -11,9 +11,9 @@ function Routing() {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Login/>} />
                     <Route path="/home" element={<MobileView mobileList={mobiles} />}></Route>
                     <Route path="/second" element={<SecondCode />}></Route>
+                    <Route path="/login" element={<Login/>} />
                 </Routes>
             </BrowserRouter>
         </div>
